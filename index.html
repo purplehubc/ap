@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palpiteiros</title>
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: Montserrat, sans-serif;
+            color: #FFFFFF;
+            background-color: #1e2a3a;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+        }
+
+        /* Seção geral */
+        .section {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Destaque de texto */
+        .highlight-text {
+            font-weight: 900;
+        }
+
+        /* Botões verdes */
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 20px;
+            width: 100%; /* Ocupa toda a largura em mobile */
+            max-width: 400px; /* Limita a largura em dispositivos maiores */
+            box-sizing: border-box;
+        }
+
+        /* Accordion (FAQ) */
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            background-color: rgba(68, 68, 68, 0.8);
+            color: #FFFFFF;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .accordion h3 {
+            cursor: pointer;
+            padding: 15px;
+            margin: 0;
+            background-color: #4a90e2;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion h3:after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .accordion h3.active:after {
+            content: '-'; /* Altera para "-" quando o conteúdo estiver aberto */
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .accordion-content p {
+            margin: 0;
+            text-align: left;
+        }
+
+        /* Estilos Mobile (Telas menores) */
+        @media only screen and (max-width: 600px) {
+            .section {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .button {
+                font-size: 1rem;
+                padding: 10px 20px;
+                width: 100%; /* Garante que ocupe a largura total em telas pequenas */
+            }
+
+            .accordion h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <script>
+        function toggleAccordion(element) {
+            var content = element.nextElementSibling;
+            element.classList.toggle('active');
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+    <div class="section">
+        <h1 class="highlight-text">SEJA BEM VINDO AO PALPITEIROS!</h1>
+    </div>
+
+    <div class="section">
+        <p>A maior comunidade WhatsApp que reúne apostas de diversos apostadores profissionais pagos de forma totalmente gratuita!</p>
+    </div>
+
+    <div class="section">
+        <h2>#NÃOPAGUEPORPALPITES</h2>
+    </div>
+
+    <div class="section">
+        <a href="#" class="button" onclick="fbq('track', 'Lead');">QUERO FAZER PARTE GRATUITAMENTE</a>
+    </div>
+
+    <div class="section">
+        <h2>PERGUNTAS FREQUENTES</h2>
+        <div class="accordion">
+            <h3 onclick="toggleAccordion(this)">PORQUE É GRATUITO?</h3>
+            <div class="accordion-content">
+                <p>O palpiteiros compartilha da ideologia que se você precisa <strong>VENDER</strong> um grupo, isso demonstra que você claramente <strong>NÃO VIVE</strong> do mercado de apostas em si.</p>
+            </div>
+
+            <h3 onclick="toggleAccordion(this)">O QUE ACONTECEU COM O GRUPO ANTIGO DE 100 MIL MEMBROS?</h3>
+            <div class="accordion-content">
+                <p>Um grande apostador nos processou por divulgar suas apostas pagas de forma gratuita, então nosso grupo foi excluído do Telegram.</p>
+            </div>
+
+            <h3 onclick="toggleAccordion(this)">O QUE VOCÊS GANHAM COM ISSO?</h3>
+            <div class="accordion-content">
+                <p>Nosso objetivo é crescer o grupo gratuito e, em 2025, criar a primeira mentoria paga sobre análise de apostas.</p>
+            </div>
+
+            <h3 onclick="toggleAccordion(this)">MEU NÚMERO FICA EXPOSTO NA COMUNIDADE DO WHATSAPP?</h3>
+            <div class="accordion-content">
+                <p>Não! O WhatsApp mantém seu número em sigilo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <a href="#" class="button" onclick="fbq('track', 'Lead');">QUERO FAZER PARTE GRATUITAMENTE</a>
+    </div>
+
+</body>
+</html>
